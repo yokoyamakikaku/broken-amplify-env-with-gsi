@@ -1,3 +1,4 @@
+/* tslint:disable */
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
@@ -7,30 +8,10 @@ export const getGroup = /* GraphQL */ `
       id
       name
       users {
-        items {
-          id
-          name
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
       schedules {
-        items {
-          id
-          name
-          startedAt
-          finishedAt
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -51,14 +32,6 @@ export const listGroups = /* GraphQL */ `
       items {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -78,29 +51,12 @@ export const getUser = /* GraphQL */ `
       group {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
         __typename
       }
       participations {
-        items {
-          id
-          userId
-          scheduleId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -122,18 +78,6 @@ export const listUsers = /* GraphQL */ `
         id
         name
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -155,29 +99,12 @@ export const getSchedule = /* GraphQL */ `
       group {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
         __typename
       }
       participations {
-        items {
-          id
-          userId
-          scheduleId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -201,18 +128,6 @@ export const listSchedules = /* GraphQL */ `
         startedAt
         finishedAt
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -233,18 +148,6 @@ export const getParticipation = /* GraphQL */ `
         id
         name
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -256,18 +159,6 @@ export const getParticipation = /* GraphQL */ `
         startedAt
         finishedAt
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -291,26 +182,6 @@ export const listParticipations = /* GraphQL */ `
         id
         userId
         scheduleId
-        user {
-          id
-          name
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        schedule {
-          id
-          name
-          startedAt
-          finishedAt
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -340,18 +211,6 @@ export const listUsersByGroupId = /* GraphQL */ `
         id
         name
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -383,18 +242,6 @@ export const listSchedulesByGroupId = /* GraphQL */ `
         startedAt
         finishedAt
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -424,26 +271,6 @@ export const listParticipationsByUserId = /* GraphQL */ `
         id
         userId
         scheduleId
-        user {
-          id
-          name
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        schedule {
-          id
-          name
-          startedAt
-          finishedAt
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -473,26 +300,6 @@ export const listParticipationsByScheduleId = /* GraphQL */ `
         id
         userId
         scheduleId
-        user {
-          id
-          name
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        schedule {
-          id
-          name
-          startedAt
-          finishedAt
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         createdAt
         updatedAt
         owner

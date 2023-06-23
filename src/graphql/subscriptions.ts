@@ -1,3 +1,4 @@
+/* tslint:disable */
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
@@ -10,30 +11,10 @@ export const onCreateGroup = /* GraphQL */ `
       id
       name
       users {
-        items {
-          id
-          name
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
       schedules {
-        items {
-          id
-          name
-          startedAt
-          finishedAt
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -53,30 +34,10 @@ export const onUpdateGroup = /* GraphQL */ `
       id
       name
       users {
-        items {
-          id
-          name
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
       schedules {
-        items {
-          id
-          name
-          startedAt
-          finishedAt
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -96,30 +57,10 @@ export const onDeleteGroup = /* GraphQL */ `
       id
       name
       users {
-        items {
-          id
-          name
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
       schedules {
-        items {
-          id
-          name
-          startedAt
-          finishedAt
-          groupId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -142,29 +83,12 @@ export const onCreateUser = /* GraphQL */ `
       group {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
         __typename
       }
       participations {
-        items {
-          id
-          userId
-          scheduleId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -187,29 +111,12 @@ export const onUpdateUser = /* GraphQL */ `
       group {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
         __typename
       }
       participations {
-        items {
-          id
-          userId
-          scheduleId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -232,29 +139,12 @@ export const onDeleteUser = /* GraphQL */ `
       group {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
         __typename
       }
       participations {
-        items {
-          id
-          userId
-          scheduleId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -279,29 +169,12 @@ export const onCreateSchedule = /* GraphQL */ `
       group {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
         __typename
       }
       participations {
-        items {
-          id
-          userId
-          scheduleId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -326,29 +199,12 @@ export const onUpdateSchedule = /* GraphQL */ `
       group {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
         __typename
       }
       participations {
-        items {
-          id
-          userId
-          scheduleId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -373,29 +229,12 @@ export const onDeleteSchedule = /* GraphQL */ `
       group {
         id
         name
-        users {
-          nextToken
-          __typename
-        }
-        schedules {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
         __typename
       }
       participations {
-        items {
-          id
-          userId
-          scheduleId
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
         nextToken
         __typename
       }
@@ -419,18 +258,6 @@ export const onCreateParticipation = /* GraphQL */ `
         id
         name
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -442,18 +269,6 @@ export const onCreateParticipation = /* GraphQL */ `
         startedAt
         finishedAt
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -479,18 +294,6 @@ export const onUpdateParticipation = /* GraphQL */ `
         id
         name
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -502,18 +305,6 @@ export const onUpdateParticipation = /* GraphQL */ `
         startedAt
         finishedAt
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -539,18 +330,6 @@ export const onDeleteParticipation = /* GraphQL */ `
         id
         name
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
@@ -562,18 +341,6 @@ export const onDeleteParticipation = /* GraphQL */ `
         startedAt
         finishedAt
         groupId
-        group {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-          __typename
-        }
-        participations {
-          nextToken
-          __typename
-        }
         createdAt
         updatedAt
         owner
