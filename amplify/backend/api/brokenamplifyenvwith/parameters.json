@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "brokenamplifyenvwith",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authbrokenamplifyenvwith936fe4a8",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
