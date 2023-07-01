@@ -1,13 +1,13 @@
 {
   "api": {
-    "brokenamplifyenvwith": {
+    "schedulepractice": {
       "dependsOn": [
         {
           "attributes": [
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "brokenamplifyenvwith936fe4a8"
+          "resourceName": "schedulepracticeccb2851f"
         }
       ],
       "output": {
@@ -16,7 +16,7 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authbrokenamplifyenvwith936fe4a8"
+              "userPoolId": "authschedulepracticeccb2851f"
             }
           }
         }
@@ -26,7 +26,7 @@
     }
   },
   "auth": {
-    "brokenamplifyenvwith936fe4a8": {
+    "schedulepracticeccb2851f": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {

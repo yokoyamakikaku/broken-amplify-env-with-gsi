@@ -1,0 +1,40 @@
+type Group @model @auth(rules: [
+  { allow: owner, operations: [create, update, delete, read] }
+]) {
+  id: ID!
+  name: String!
+  users: [User!] @hasMany(indexName: "byGroup", fields: ["id"])
+  schedules: [Schedule!] @hasMany(indexName: "byGroup", fields: ["id"])
+}
+
+type User @model @auth(rules: [
+  { allow: owner, operations: [create, update, delete, read] }
+]) {
+  id: ID!
+  name: String!
+  groupId: ID! @index(name: "byGroup", queryField: "listUsersByGroupId")
+  group: Group! @belongsTo(fields: ["groupId"])
+  participations: [Participation!] @hasMany(indexName: "byUserId", fields: ["id"])
+}
+
+type Schedule @model @auth(rules: [
+  { allow: owner, operations: [create, update, delete, read] }
+]) {
+  id: ID!
+  name: String!
+  startedAt: AWSDateTime!
+  finishedAt: AWSDateTime!
+  groupId: ID! @index(name: "byGroup", queryField: "listSchedulesByGroupId")
+  group: Group! @belongsTo(fields: ["groupId"])
+  participations: [Participation!] @hasMany(indexName: "byScheduleId", fields: ["id"])
+}
+
+type Participation @model @auth(rules: [
+  { allow: owner, operations: [create, update, delete, read] }
+]) {
+  id: ID!
+  userId: ID! @index(name: "byUserId", queryField: "listParticipationsByUserId")
+  scheduleId: ID! @index(name: "byScheduleId", queryField: "listParticipationsByScheduleId")
+  user: User! @belongsTo(fields: ["userId"])
+  schedule: Schedule! @belongsTo(fields: ["scheduleId"])
+}

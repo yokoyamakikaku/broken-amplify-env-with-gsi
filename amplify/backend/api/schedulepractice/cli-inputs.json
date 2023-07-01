@@ -1,11 +1,11 @@
 {
   "version": 1,
   "serviceConfiguration": {
-    "apiName": "brokenamplifyenvwith",
+    "apiName": "schedulepractice",
     "serviceName": "AppSync",
     "defaultAuthType": {
       "mode": "AMAZON_COGNITO_USER_POOLS",
-      "cognitoUserPoolId": "authbrokenamplifyenvwith936fe4a8"
+      "cognitoUserPoolId": "authschedulepracticeccb2851f"
     }
   }
 }
